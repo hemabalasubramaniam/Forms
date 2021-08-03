@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms
+        </title>
+        <style>
+            body{
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+            form{
+                font-size: 26px;
+                line-height: 1.8;
+            }
+            select{
+                width: 26%;
+                height: 30px;
+            }
+            .required{
+                color: red;
+            }
+            .container{
+                width: 70%;
+                clear: both;
+                border-style:double;
+                padding-left: 40px;
+            }
+            .end{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .end :hover{
+                background-color: rgb(156, 237, 252);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <form>
+            <h3>
+                JOB APPLICATION FORM
+            </h3>
+            <label for="fname">First Name:-</label><span class="required">*</span><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:-</label><span class="required">*</span><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="dob">Date Of Birth:-</label><span class="required">*</span><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="gender">Gender:-</label><span class="required">*</span><br>
+            <input type="radio" id="gender" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="others">Others</label><br>
+            <label for="age">Age:-</label><span class="required">*</span><br>
+            <input type="number" id="age" name="age" required><br>
+            <label for="degree">Degree:-</label><span class="required">*</span><br>
+            <input type="text" id="degree" name="degree"required><br>
+            <label for="institution">Studied Institution:-</label><span class="required">*</span><br>
+            <input type="text" id="institution" name="institution" required><br>
+            <label for="nationality">Nationality:-</label><span class="required">*</span><br>
+            <select name="nationality" required id="nationality">
+                <option value="india">Indian</option>
+                <option value="srilanka">Srilanka</option>
+                <option value="American">American</option>
+                <option value="Korean">Korean</option>
+                <option value="russia">Russian</option>
+            </select><br>
+            <label for="State">State:-</label><span class="required">*</span><br>
+            <select name="state" required id="state">
+                <option value="tamilnadu">Tamilnadu</option>
+                <option value="kerala">Kerala</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="andhra">Andhra Pradesh</option>
+                <option value="mumbai">Madhya Pradesh</option>
+                <option value="odisha">Odisha</option>
+                <option value="assam">Assam</option>
+            </select><br>
+            <label for="district">District:-</label><span class="required">*</span><br>
+            <input type="text" id="district" name="district" required><br>
+            <label for="address">Address:-</label><span class="required">*</span><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="email">E-Mail:-</label><span class="required">*</span><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="pwd">Password:-</label><span class="required">*</span><br>
+            <input type="password" id="pwd" name="pwd" required><br>
+
+            <label for="phn">Phone No:-</label><span class="required">*</span><br>
+            <input type="number" id="phn" name="phn" required><br>
+
+            <label for="skills">Skills:-</label><span class="required">*</span><br>
+            <input type="checkbox" id="skills1" name="skills1">
+            <label for="skills1">C Language</label><br>
+            <input type="checkbox" id="skills2" name="skills2">
+            <label for="skills2">Java</label><br>
+            <input type="checkbox" id="skills3" name="skills3">
+            <label for="skills3">Python</label><br>
+            <input type="checkbox" id="skills4" name="skills4">
+            <label for="skills4">C ++</label><br>
+            <input type="checkbox" id="skills5" name="skills5">
+            <label for="skills5">Web Technology</label><br><br>
+        
+
+            <label for="areasofinterest">Areas of Interest:-</label><span class="required">*</span><br>
+            <input type="checkbox" id="areas1" name="areas1">
+            <label for="areas1">Programming Languages</label><br>
+            <input type="checkbox" id="areas2" name="areas2">
+            <label for="areas2">Web Technology</label><br>
+            <input type="checkbox" id="areas3" name="areas3">
+            <label for="areas3">Database Management System</label><br>
+            <input type="checkbox" id="areas4" name="areas4">
+            <label for="areas4">Tableau</label><br><br>
+
+            <label for="resume">Upload Resume</label><span class="required">*</span><br>
+            <input type="file" id="resume" name="resume"><br>
+
+            <input type="radio" id="agree" name="agree">
+            <label for="agree">I agree to terms & conditions</label><span class="required">*</span><br>
+            <input type="checkbox" id="notify" name="notify">
+            <label for="notify"> Notify me the Status via Email</label><span class="required">*</span>
+
+            <div class="end">
+            <input type="submit" id="submit" name="submit" style="padding:7px">
+            <input type="reset" id="reset" name="reset" style="padding:7px">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
